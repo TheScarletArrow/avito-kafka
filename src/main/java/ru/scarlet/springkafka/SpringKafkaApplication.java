@@ -18,12 +18,12 @@ public class SpringKafkaApplication {
     }
     @Bean
     public NewTopic firstTopic(){
-        return new NewTopic("first", 1, (short)1);
+        return new NewTopic("first", 3, (short)1);
     }
-//    @Bean
-//    CommandLineRunner commandLineRunner(KafkaTemplate<String, String> kafkaTemplate){
-//        return args -> {
-//            kafkaTemplate.send("first", "hello world");
-//        };
-//    }
+    @Bean
+    public NewTopic secondTopic(){
+        return new NewTopic("second", 3, (short)1);
+    }
+
+
 }

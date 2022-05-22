@@ -1,14 +1,8 @@
-spring:
-  kafka:
-    producer:
-      bootstrap-servers: localhost:19092
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
-
-
-    consumer:
-      bootstrap-servers: localhost:19092
-      auto-offset-reset: earliest
-      group-id: group_id
-      key-deserializer: org.apache.kafka.common.serialization.StringSerializer
-      value-deserializer: org.apache.kafka.common.serialization.StringSerializer
+#spring:
+#  kafka:
+#    producer:
+#      bootstrap-servers: spring-kafka:9092
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+server:
+  port: 8082
